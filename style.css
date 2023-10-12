@@ -1,0 +1,267 @@
+:root {
+    --cinza: #667085;
+    --vermelho: #8E2424;
+    --azul-cinza: #101828;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+  }
+  
+  body {
+    width: 100%;
+    height: 100vh;
+  }
+
+ /* NAVEGADOR */
+
+ nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 1rem 0;
+}
+
+
+.container__link {
+    text-decoration: none;
+    margin-right: 2rem; 
+    color: var(--cinza);
+    font-size: 0.9rem;
+    font-weight: 500;
+
+}
+
+button {
+    padding: 0.8rem 1rem;
+    cursor: pointer;
+    border: none;
+    border-radius: 0.5rem;
+    font-weight: 500;
+    background: none;
+    color: var(--cinza);
+    font-size: 0.9rem;
+  }
+  
+  button#signUp {
+    background-color: var(--vermelho);
+    color: #FFF;
+  }
+
+  .cabecalho {
+    display: flex;
+    padding: 6rem 0;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+  }
+
+ /* CABEÇALHO */
+
+  .cabecalho__span {
+    color: var(--vermelho);
+    font-weight: 600;
+  }
+  
+  .cabecalho__titulo {
+    color: var(--azul-cinza);
+    font-size: 3rem;
+    font-weight: 600;
+  }
+
+  .cabecalho__texto {
+    color: var(--cinza);
+    font-size: 1.25rem;
+    max-width: 55%;
+    font-weight: 400;
+    text-align: center;
+  }
+
+/* SEÇÃO METRICA */
+
+  .metricas__container {
+    display: flex;
+    padding: 6rem 4rem;
+    gap: 2rem;
+  }
+
+  
+
+  .metrica__titulo {
+    color: var(--vermelho);
+    font-size: 3.75rem;
+    font-weight: 600;
+  
+  }
+
+  .metrica__subtitulo {
+    color: var(--azul-cinza);
+    font-size: 1rem;
+    font-weight: 500;
+    padding: 0.5rem 0 0.5rem 0;
+
+  }
+
+  .metrica__texto {
+    color: var(--cinza);
+    font-size: 0.9rem;
+    font-weight: 400;
+
+  }
+
+  .container__talentos {
+    display: flex;
+    padding: 6rem 0;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.25rem;
+
+  }
+
+  .talentos__span {
+    background-color: #8e24241b;
+    border-radius: 16px;
+    padding: 0.5em;
+    color: var(--vermelho);
+    font-weight: 500;
+    box-shadow: 0 8px 10px rgba(0, 0, 0, 0.366);
+    
+  }
+
+  .talentos__titulo {
+    color: var(--azul-cinza);
+    font-size: 2.25rem;
+    font-weight: 600;
+  }
+
+  .talentos__texto {
+    color: var(--cinza);
+    font-size:1.25rem ;
+    font-weight: 400;
+    padding-bottom: 2rem;
+  }
+
+  /* VAGAS */
+
+  .vagas-abertas {
+    padding-top: 1rem;
+  }
+ 
+  .vagas-abertas span.area-principal {
+    display: block;
+    max-width: 50%;
+    margin: 0 auto;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    font-weight: bold;
+    color: var(--azul-cinza);
+  }
+
+  .vaga {
+    border: 1px solid #EAECF0;
+    border-radius: 0.5rem;
+    padding: 1rem;
+    max-width: 50%;
+    margin: 0 auto;
+    margin-bottom: 1rem;
+    color: var(--azul-cinza);
+  }
+  
+  .vaga span.titulo-vaga {
+    font-weight: 500;
+    margin-bottom: 16px;
+  }
+  
+  .vaga .informacoes {
+    margin-top: 1rem;
+    font-size: 90%;
+    color: var(--cinza);
+    display: flex;
+    gap: 2rem;
+  }
+
+  .depoimento {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 80%;
+    margin: 8rem auto;
+    background-color: rgba(195, 25, 25, 0.05);
+    padding: 3rem 2rem;
+  }
+   
+  h2.cabecalho__titulo{
+    font-size:2.25rem ;
+    font-weight: 500;
+    text-align: center;
+    padding: 16px 0 32px 0;
+
+  }
+
+  .nome {
+    font-size:0.9rem;
+    font-weight: 500;
+    padding: 16px 0 6px 0;
+  }
+
+  .cargo {
+    font-size: 0.9rem;
+    font-weight: 400;
+    color: var(--cinza);
+  }
+
+  footer {
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   background:#F9FAFB ;
+   padding: 6rem 1rem;
+   gap: 1.5rem;
+   text-align: center;
+  }
+
+  footer h2 {
+    color: var(--azul-cinza);
+    font-weight: 600;
+    font-size:2.25rem ;
+  }
+
+  footer span {
+    color: var(--cinza);
+    font-size: 1.25rem;
+    font-weight: 400;
+  }
+
+  footer form {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  footer input {
+    outline: none;
+    border: 1px solid #D0D5DD;
+    border-radius: 0.5rem;
+    padding-left: 1rem;
+    width: 12rem;
+    margin-right: 1rem;
+  }
+
+  .signUp {
+    background-color: var(--vermelho);
+    color: #FFF;
+  }
+
+  .segundo {
+    font-size: 1rem;
+  }
+
+
+
+
+  
+
+
